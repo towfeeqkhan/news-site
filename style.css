@@ -35,7 +35,7 @@ header {
   font-weight: 700;
 }
 
-nav ul {
+.ul-links {
   display: flex;
 }
 
@@ -52,6 +52,23 @@ li a {
 
 li a:hover {
   color: #ff1a1a;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger-links {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.hamburger-links li {
+  margin-bottom: 8px;
 }
 
 /* HERO SECTION */
@@ -471,8 +488,16 @@ textarea {
 }
 
 @media (max-width: 850px) {
+  .ul-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
   header {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 
